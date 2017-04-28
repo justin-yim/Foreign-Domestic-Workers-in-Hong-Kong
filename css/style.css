@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* LAYOUT */
+body {
+	overflow: hidden;
+	margin: 115px;
+	-webkit-font-smoothing: antialiased;			  
+}
+
+.container{
+    margin-left: 125px;
+	width: 932px; 
+	height: 463px;
+	border: 0px;
+	text-align: left;
+	line-height: 16px;
+	/*border-color: #363636;*/
+}
+
+img{
+    position: absolute;
+    right: 0px;
+    top: -252px;
+    z-index: -1;	
+}
+
+/* TEXT */
+.heading{
+	font-family: 'Ubuntu', sans-serif;
+	font-size:20px;
+	line-height: 16px;
+}
+
+#textbox{
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	float:left;
+	width:65%;
+	line-height: 22px;
+	/*padding-left:45px;*/
+	padding-bottom: 30px;
+}	
+
+#clicker{			 
+    text-align: center;
+    margin-top: 237px;
+	/*margin-left: 45px;*/
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+	font-size:18px;
+    border: 1.5px solid;
+    border-color: #363636;
+    width: 100px;
+    cursor: pointer;
+}
+
+a:visited, a:link{ 
+	color: #000000;
+	text-decoration: none;
+	cursor: auto;
+}
+a:active, a:hover{ 
+	color: #d25c4d;
+	text-decoration: none;
+	cursor: auto;
+}
