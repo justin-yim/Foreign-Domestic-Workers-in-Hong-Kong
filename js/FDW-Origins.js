@@ -64,7 +64,7 @@
   		.domain([0, d3.max(dataset, function(d) {  return d3.max(d, function(d) { return d.y0 + d.y; });  })])
   		.range([height, 0]);
 
-	var colors = ["#5D8CAE", "#E26A6A", "#fff159", "#ffbf59", "#f498cb", "#c9966f", "#62b8dd", "#98ea92", "#913d88", "#336e7b", "#c5eff7"];
+	var colors = ["#34495E", "#E26A6A", "#fff159", "#ffbf59", "#f498cb", "#c9966f", "#62b8dd", "#98ea92", "#913d88", "#336e7b", "#c5eff7"];
 
 	// Define and draw axes
 	var yAxis = d3.svg.axis()
