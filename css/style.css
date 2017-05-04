@@ -1,23 +1,58 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/* LAYOUT */
 body {
 	margin: 0px;
+	font-family: 'Ubuntu', sans-serif;
+	
 	-webkit-font-smoothing: antialiased;			  
 }
 
-.container{
-    margin-left: 230px;
-    margin-top: 50px;
-    margin-right: 230px;
-    margin-bottom: 50px;
-    width: 975px;
-    height: 550px;
+/* TEXT ================================================================================ */
+.heading{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	line-height: 16px;
+	padding-top:70px;
+	padding-left: 100px;
+}
+
+/* LAYOUT ================================================================================ */
+
+#heading-next{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 34px;
+	text-align: center;
+	line-height: 30px;
+	padding-top:26px;
+}
+
+#container{
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 35px;
+    width: 1240px;
+    height: 558px;
 	border: 0px;
 	text-align: left;
 	line-height: 16px;
 	/*border-color: #363636;*/
+}
+
+/* Map ================================================================================ */
+
+#map {
+    float: left;
+    position: relative;
+    padding-bottom: 25px;
+    top: 65px;
+    left: 45px;
+    height: 350px;
+    width: 570px;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
 }
 
 img{
@@ -27,34 +62,43 @@ img{
     z-index: -1;	
 }
 
-/* TEXT */
-.heading{
-	font-family: 'Ubuntu', sans-serif;
-	font-size:20px;
-	line-height: 16px;
-}
-
 #textbox{
 	font-family: 'Open Sans', sans-serif;
 	font-size:16px;
 	float:left;
-	width:65%;
+	width:50%;
 	line-height: 22px;
-	/*padding-left:45px;*/
+	padding-left: 100px;
 	padding-bottom: 30px;
 }	
 
 #clicker{			 
     text-align: center;
-    margin-top: 237px;
-	/*margin-left: 45px;*/
-    padding-bottom: 10px;
+    margin-top: 235px;
+	margin-left: 100px;
+    padding-bottom: 13px;
     font-family: 'Ubuntu', sans-serif;
 	font-size:18px;
     border: 1.5px solid;
     border-color: #363636;
     width: 100px;
     cursor: pointer;
+	animation-duration: 3s;
+	animation-delay: 8s;
+	animation-iteration-count: 1;
+}
+
+#textbox-next {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    float: right;
+	position: relative;
+	top:45px;
+	right: 0px;
+	width: 570px;
+    line-height: 22px;
+    padding-left: 50px;
+	padding-bottom: 30px;
 }
 
 #clicker-next{			 
@@ -66,7 +110,7 @@ img{
     border-color: #363636;
 	cursor: pointer;
 	width: 100px;
-	padding-top: 15px;
+	padding-top: 10px;
 	height: 30px;
 	z-index: 15;
     top: 102%;
@@ -74,24 +118,189 @@ img{
 	margin: -100px 0 0 -150px;
 }
 
+#legend{
+	font-size:14px;
+	line-height: 18px;
+	position: fixed;
+	bottom: 20px;
+	right: 3.59%;
+	width: 200px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+/*Animation*/
+
 #intro1{
-	animation-duration: 4s;
-  	animation-delay: 1s;
+	animation-duration: 3s;
+  	animation-delay: 0s;
  	animation-iteration-count: 1;
 }
 
 #intro2{
-	animation-duration: 4s;
-	animation-delay: 4s;
+	animation-duration: 3s;
+	animation-delay: 3s;
 	animation-iteration-count: 1;
 }
 
 #intro3{
-	animation-duration: 4s;
-	animation-delay: 6s;
+	animation-duration: 3s;
+	animation-delay: 5s;
 	animation-iteration-count: 1;
 }
 
+/* CHART ================================================================================ */
+
+svg {
+	margin: 0px auto;
+	display: inline-block;
+	padding-top: 20px;
+}
+
+path { 
+   /* stroke: steelblue; */
+	stroke-width: 1.5;
+	fill: none;
+}
+
+#chart {
+	float: left;
+	position: relative;
+	top:45px;
+	padding-left:0px;
+	width: 570px;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+}
+
+#bar {
+	float: left;
+	animation-duration: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: grey;
+	opacity: 0.2;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+.tick text{
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.tick line{
+	opacity: 0.3;
+	/* stroke-dasharray: 4,4;*/
+}
+
+div.popover { 
+	text-align: left;     
+	width: 240px;          
+	padding: 10px;  
+	font: 11px sans-serif;
+	line-height: 15px;
+	background: lightgrey; 
+	color: black;
+	border: 0px;    
+	border-radius: 8px;     
+	pointer-events: all;   
+}
+
+div.tooltip { 
+	display: inline-block;
+	text-align: left;     
+	font: 11px sans-serif;
+	line-height: 15px;
+	color: black;
+	border: 0px;    
+	border-radius: 8px;     
+	pointer-events: all; 
+	background: lightgrey;     
+}
+
+path.domain {
+	stroke: none;
+}
+
+.y .tick line {
+  stroke: #ddd;
+}
+
+/* BAR CHART TEXT ================================================================================ */
+
+.leg {
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Mukta", sans-serif;
+  color: black;
+}
+
+.leg2 {
+  animation-duration: 3s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Mukta", sans-serif;
+  color: black;
+}
+
+.first {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 8s;
+  animation-iteration-count: 1;
+  position: relative;
+}
+
+.second {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 8.5s;
+  animation-iteration-count: 1;
+}
+
+.third {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 9s;
+  animation-iteration-count: 1;
+}
+
+.forth {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 9.5s;
+  animation-iteration-count: 1;
+}
+
+.fifth {
+  color: dimgrey;
+  animation-duration: 3s;
+  animation-delay: 10s;
+  animation-iteration-count: 1;
+}
+
+.popover-content {
+  padding: 10px;
+  line-height: 15px;
+}
+
+#popover636917 {
+  position: absolute;
+}
+
+
+/*Other ================================================================================ */
 
 a:visited, a:link{ 
 	color: #000000;
