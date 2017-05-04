@@ -156,12 +156,6 @@ svg {
 	padding-top: 20px;
 }
 
-path { 
-   /* stroke: steelblue; */
-	stroke-width: 1.5;
-	fill: none;
-}
-
 #chart {
 	float: left;
 	position: relative;
@@ -178,6 +172,12 @@ path {
 	animation-duration: 5s;
 	animation-delay: 0s;
 	animation-iteration-count: 1;
+}
+
+path { 
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
 }
 
 .axis path,

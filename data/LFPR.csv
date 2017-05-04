@@ -1,36 +1,36 @@
-year,LFPR,country
-1982,47.5,Hong Kong
-1983,47.4,Hong Kong
-1984,49.1,Hong Kong
-1985,48.5,Hong Kong
-1986,48.9,Hong Kong
-1987,48.7,Hong Kong
-1988,48.4,Hong Kong
-1989,47.3,Hong Kong
-1990,46.8,Hong Kong
-1991,47.9,Hong Kong
-1992,46.3,Hong Kong
-1993,46.4,Hong Kong
-1994,46.9,Hong Kong
-1995,47.6,Hong Kong
-1996,47.8,Hong Kong
-1997,47.9,Hong Kong
-1998,48.5,Hong Kong
-1999,49.2,Hong Kong
-2000,49.9,Hong Kong
-2001,50.8,Hong Kong
-2002,51.9,Hong Kong
-2003,51.7,Hong Kong
-2004,51.9,Hong Kong
-2005,51.8,Hong Kong
-2006,52.6,Hong Kong
-2007,53.1,Hong Kong
-2008,53.1,Hong Kong
-2009,53.2,Hong Kong
-2010,51.9,Hong Kong
-2011,53,Hong Kong
-2012,53.5,Hong Kong
-2013,54.5,Hong Kong
-2014,54.5,Hong Kong
-2015,54.7,Hong Kong
-2016,54.8,Hong Kong
+date,close
+1-Jan-1982,47.5
+1-Jan-1983,47.4
+1-Jan-1984,49.1
+1-Jan-1985,48.5
+1-Jan-1986,48.9
+1-Jan-1987,48.7
+1-Jan-1988,48.4
+1-Jan-1989,47.3
+1-Jan-1990,46.8
+1-Jan-1991,47.9
+1-Jan-1992,46.3
+1-Jan-1993,46.4
+1-Jan-1994,46.9
+1-Jan-1995,47.6
+1-Jan-1996,47.8
+1-Jan-1997,47.9
+1-Jan-1998,48.5
+1-Jan-1999,49.2
+1-Jan-2000,49.9
+1-Jan-2001,50.8
+1-Jan-2002,51.9
+1-Jan-2003,51.7
+1-Jan-2004,51.9
+1-Jan-2005,51.8
+1-Jan-2006,52.6
+1-Jan-2007,53.1
+1-Jan-2008,53.1
+1-Jan-2009,53.2
+1-Jan-2010,51.9
+1-Jan-2011,53
+1-Jan-2012,53.5
+1-Jan-2013,54.5
+1-Jan-2014,54.5
+1-Jan-2015,54.7
+1-Jan-2016,54.8
