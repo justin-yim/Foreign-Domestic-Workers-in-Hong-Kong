@@ -156,6 +156,10 @@ svg {
 	padding-top: 20px;
 }
 
+.chart-title{
+	font-family:"Open Sans", sans-serif;
+}
+
 #chart {
 	float: left;
 	position: relative;
@@ -165,6 +169,14 @@ svg {
 	animation-duration: 3s;
 	animation-delay: 1s;
 	animation-iteration-count: 1;
+}
+
+#chart-no-animation {
+	float: left;
+	position: relative;
+	top:45px;
+	padding-left:0px;
+	width: 570px;
 }
 
 #bar {
@@ -230,6 +242,14 @@ path.domain {
 
 .y .tick line {
   stroke: #ddd;
+}
+
+/* FIGURES ======================================================================================== */
+
+.circle-1{
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
 }
 
 /* BAR CHART TEXT ================================================================================ */
