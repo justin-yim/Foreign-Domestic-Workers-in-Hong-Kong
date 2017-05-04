@@ -1,3 +1,4 @@
+// JavaScript Document
 // Set the dimensions of the canvas / graph
 var margin = {top: 0, right: 0, bottom: 55, left: 80};
 
