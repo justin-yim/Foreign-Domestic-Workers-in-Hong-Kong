@@ -205,4 +205,3 @@ function change(data) {
 
     polyline.exit()
         .remove();
-};
