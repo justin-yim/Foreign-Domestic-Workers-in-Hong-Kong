@@ -1,4 +1,7 @@
 // JavaScript Document
+
+//Based on d3noob's line chart: http://bl.ocks.org/d3noob/6eb506b129f585ce5c8a
+
 // Set the dimensions of the canvas / graph
 var margin = {top: 0, right: 0, bottom: 55, left: 80};
 

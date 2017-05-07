@@ -1,3 +1,7 @@
+// JavaScript Document
+
+//Based on alanz09's bar chart: https://alanz09.github.io/project2/total_countries
+
 	var margin = {top: 0, right: 0, bottom: 55, left: 100};
 
 	var width = 620 - margin.left - margin.right,
