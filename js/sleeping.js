@@ -61,8 +61,20 @@ var colorRange = d3.scale.category20();
 var color = d3.scale.ordinal()
 	.range(colorRange.range());
 
-
 datasetTotal = [
+		{label:"had suffered from Verbal abuse", value:58},
+		{label:"had suffered from Physical abuse", value:18},
+		{label:"had suffered from Sexual abuse", value:6},
+        ];
+
+datasetOption1 = [
+		{label:"No signs of Exploitation or forced labour", value:5.4},	
+		{label:"Medium signs of Exploitation", value:11.3},	
+		{label:"Victim of Forced Labour", value:17},
+		{label:"Strong signs of Exploitation", value:66.3}
+        ];
+
+datasetOption2 = [
 		{label:"Sharing bed with child", value:0.1},	
 		{label:"Sharing room with elderly", value:10.7},	
 		{label:"Sleeping in kitchen or other shared living space", value:2},	
@@ -71,14 +83,13 @@ datasetTotal = [
 		{label:"Sharing room with child", value:24.5}
         ];
 
-datasetOption1 = [
-		{label:"15 hours or more per day", value:12.9},
-		{label:"8 hours or less per day (global benchmark)", value:7.4},
-		{label:"12 or more hours a day", value:63.7}
+datasetOption3 = [	
+		{label:"8 hours or less per day", value:7.4},
+		{label:"12 or more hours a day", value:63.7},
+		{label:"15 or more hours a day", value:12.9}
         ];
 
 change(datasetTotal);
-
 
 d3.selectAll("input")
 	.on("change", selectDataset);
@@ -87,7 +98,7 @@ function selectDataset()
 {
 	var value = this.value;
 	if (value == "total")
-	{
+	{	
 		change(datasetTotal);
 	}
 	else if (value == "option1")
@@ -97,6 +108,10 @@ function selectDataset()
 	else if (value == "option2")
 	{
 		change(datasetOption2);
+	}
+	else if (value == "option3")
+	{
+		change(datasetOption3);
 	}
 }
 
@@ -178,7 +193,6 @@ function change(data) {
             return (d.data.label+": "+d.value+"%");
         });
 
-
     text.exit()
         .remove();
 
@@ -205,3 +219,4 @@ function change(data) {
 
     polyline.exit()
         .remove();
+};
