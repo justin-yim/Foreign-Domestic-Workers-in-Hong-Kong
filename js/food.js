@@ -7,8 +7,8 @@ var color = d3.scale.ordinal()
 
 var canvas = d3.select("div#chart")
 	.append("svg")
-	.attr("width", 200)
-	.attr("height", 200)
+	.attr("width", 620)
+	.attr("height", 422)
 
 var group = canvas.append("g")
 	.attr("transform", "translate(100,100)");

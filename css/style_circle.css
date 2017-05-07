@@ -4,7 +4,6 @@
 body {
 	margin: 0px;
 	font-family: 'Ubuntu', sans-serif;
-	
 	-webkit-font-smoothing: antialiased;			  
 }
 
@@ -20,6 +19,9 @@ body {
 /* LAYOUT ================================================================================ */
 
 #heading-next{
+	position: absolute;
+    left: 41%;
+    top: 0%;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 34px;
 	text-align: center;
@@ -28,7 +30,10 @@ body {
 }
 
 #container{
-    margin-left: 100px;
+    position: absolute;
+    left: 0%;
+    top: 13%;
+	margin-left: 100px;
     margin-top: 0px;
     margin-right: 100px;
     margin-bottom: 35px;
@@ -40,12 +45,66 @@ body {
 	/*border-color: #363636;*/
 }
 
-/* CHART ================================================================================ */
+/* PIE CHART ================================================================================ */
 
 svg {
+	position: absolute;
+	float: left;
 	margin: 0px auto;
 	display: inline-block;
 	padding-top: 20px;
+    padding-bottom: 25px;
+    top: 65px;
+    left: 45px;
+    height: 422px;
+    width: 710px;
+	animation-duration: 3s;
+  	animation-delay: 0s;
+ 	animation-iteration-count: 1;
+}
+
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .4;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+.labelValue
+{
+	font-size: 60%;
+	opacity: .5;
+}
+
+.toolTip {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
+
+text {
+  	font-family: 'Open Sans', sans-serif;
+	font-size:10px;
+}
+
+#reminder{
+    position: absolute;
+    top: 405px;
+    left: 115px;
 }
 
 /* Map ================================================================================ */
@@ -160,6 +219,13 @@ img{
 	animation-iteration-count: 1;
 }
 
+#circle3{
+	line-height: 16px;
+	animation-duration: 3s;
+	animation-delay: 5s;
+	animation-iteration-count: 1;
+}
+
 /* FIGURES ======================================================================================== */
 
 .circle-1{
@@ -184,8 +250,9 @@ img{
 	top:45px;
 	padding-left:0px;
 	width: 570px;
+	height: 420px;
 	animation-duration: 3s;
-	animation-delay: 1s;
+	animation-delay: 0s;
 	animation-iteration-count: 1;
 }
 
@@ -326,7 +393,6 @@ path.domain {
 #popover636917 {
   position: absolute;
 }
-
 
 /*Other ================================================================================ */
 
