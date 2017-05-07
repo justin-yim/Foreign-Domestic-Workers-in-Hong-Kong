@@ -65,8 +65,6 @@ svg {
 
 .box {
     position: absolute;
-	font-family: 'Open Sans', sans-serif;
-	font-size:14px;
     top: 26%;
     left: 25%;
     margin: -100px -150px -100px -150px;
@@ -111,8 +109,11 @@ svg {
 	padding-bottom: 30px;
 }	
 
-.ending {
+#textbox-ending {
     position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height: 1.2;
     top: 10%;
     left: 7%;
     width: 412px;
@@ -170,7 +171,7 @@ svg {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     border: 1.5px solid;
     border-color: #363636;
     cursor: pointer;
@@ -252,6 +253,9 @@ svg {
 
 #poem {
 	position: relative;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 	top:34%;
 	left:52%;
 	animation-delay: 4.5s;
