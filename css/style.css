@@ -17,6 +17,14 @@ body {
 	padding-left: 100px;
 }
 
+.heading-source{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	line-height: 16px;
+	padding-top:20px;
+	padding-left: 100px;
+}
+
 /* LAYOUT ================================================================================ */
 
 #heading-next{
@@ -130,6 +138,16 @@ svg {
     width: 412px;
     height: 412px;
 }
+
+#textbox-sources{
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	float:left;
+	width:60%;
+	line-height: 22px;
+	padding-left: 100px;
+	padding-bottom: 30px;
+}	
 
 #clicker{			 
     text-align: center;
@@ -248,6 +266,21 @@ svg {
 	animation-duration: 3s;
 	animation-delay: 0s;
 	animation-iteration-count: 1;
+}
+
+#clicker-sources{			 
+	position: absolute;
+	text-align: center;
+    margin-top: -66px;
+    margin-left: 265px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    border: 1.5px solid;
+    border-color: #363636;
+    width: 100px;
+    cursor: pointer;
 }
 
 #legend{
