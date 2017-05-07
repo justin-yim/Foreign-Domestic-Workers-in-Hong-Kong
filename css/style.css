@@ -95,6 +95,17 @@ svg {
     z-index: -1;	
 }
 
+#reminder2{
+	position: absolute;
+    top: 345px;
+    left: 275px;
+    font-size: larger;
+	color:gray;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+}
+
 #caption{
     z-index: -1;	
 }
