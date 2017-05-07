@@ -297,7 +297,7 @@ svg {
 	left:52%;
 	animation-delay: 4.5s;
 	animation-name: poem;
-	animation-duration:15s;
+	animation-duration:45s;
 	animation-timing-function: linear;
 	animation-iteration-count:infinite;
 }
@@ -309,7 +309,7 @@ svg {
 /* Make it move! */
 @keyframes poem {
     0%   { top:   34% }
-    100% { top: -34% }
+    100% { top: -190% }
 }
 
 /* FIGURES ======================================================================================== */
