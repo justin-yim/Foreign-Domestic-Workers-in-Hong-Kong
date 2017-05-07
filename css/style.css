@@ -63,10 +63,37 @@ svg {
     animation-iteration-count: 1;
 }
 
-img{
+.box {
+    position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+    top: 26%;
+    left: 25%;
+    margin: -100px -150px -100px -150px;
+    background-image: linear-gradient(180deg, #FFF, rgba(255,255,255,0.75));
+    opacity: 0.95;
+    border-radius: 0.5em;
+    border: 20px solid transparent;
+	padding:20px;
+    text-align: left;
+    line-height: 16px;
+    max-height: 475px;
+    right: 25%;
+    bottom: 28%;
+}
+
+.background{
     position: absolute;
     right: 0px;
     top: -252px;
+    z-index: -1;	
+}
+
+.background-ending{
+	position: absolute;
+	opacity: 0.8;
+    right: 0px;
+    top: 0px;
     z-index: -1;	
 }
 
@@ -83,6 +110,14 @@ img{
 	padding-left: 100px;
 	padding-bottom: 30px;
 }	
+
+.ending {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 412px;
+    height: 412px;
+}
 
 #clicker{			 
     text-align: center;
@@ -130,10 +165,47 @@ img{
 	margin: -100px 0 0 -150px;
 }
 
+#clicker-end{			 
+	position: absolute;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1.5px solid;
+    border-color: #363636;
+    cursor: pointer;
+    width: 184px;
+    padding-top: 14px;
+    height: 34px;
+    top: 102%;
+    left: 55%;
+    margin: -100px 0 0 -150px;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-iteration-count: 1;
+}
+
+#clicker-about{			 
+    text-align: center;
+    margin-top: 304px;
+	margin-left: 100px;
+    padding-bottom: 13px;
+    font-family: 'Ubuntu', sans-serif;
+	font-size:18px;
+    border: 1.5px solid;
+    border-color: #363636;
+    width: 100px;
+    cursor: pointer;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
 #legend{
 	font-size:14px;
 	line-height: 18px;
 	position: fixed;
+	color: #fff;
 	bottom: 20px;
 	right: 3.59%;
 	width: 200px;
@@ -150,14 +222,53 @@ img{
 
 #intro2{
 	animation-duration: 3s;
-	animation-delay: 3s;
+	animation-delay: 3.5s;
 	animation-iteration-count: 1;
 }
 
 #intro3{
 	animation-duration: 3s;
-	animation-delay: 5s;
+	animation-delay: 7s;
 	animation-iteration-count: 1;
+}
+
+#ending1{
+	animation-duration: 3s;
+  	animation-delay: 0s;
+ 	animation-iteration-count: 1;
+}
+
+#ending2{
+	animation-duration: 3s;
+	animation-delay: 3.5s;
+	animation-iteration-count: 1;
+}
+
+#ending3{
+	animation-duration: 3s;
+	animation-delay: 7s;
+	animation-iteration-count: 1;
+}
+
+#poem {
+	position: relative;
+	top:34%;
+	left:52%;
+	animation-delay: 4.5s;
+	animation-name: poem;
+	animation-duration:15s;
+	animation-timing-function: linear;
+	animation-iteration-count:infinite;
+}
+
+#poem:hover {
+    -webkit-animation-play-state: paused;
+}
+
+/* Make it move! */
+@keyframes poem {
+    0%   { top:   34% }
+    100% { top: -34% }
 }
 
 /* FIGURES ======================================================================================== */
@@ -262,73 +373,16 @@ path.domain {
   stroke: #ddd;
 }
 
-/* BAR CHART TEXT ================================================================================ */
-
-.leg {
-  animation-duration: 3s;
-  animation-delay: 3s;
-  animation-iteration-count: 1;
-  font-size: 12px;
-  line-height: 20px;
-  font-family: "Mukta", sans-serif;
-  color: black;
+ul{
+	list-style-type: none;
 }
 
-.leg2 {
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-iteration-count: 1;
-  font-size: 12px;
-  line-height: 20px;
-  font-family: "Mukta", sans-serif;
-  color: black;
-}
-
-.first {
-  color: dimgrey;
-  animation-duration: 3s;
-  animation-delay: 8s;
-  animation-iteration-count: 1;
-  position: relative;
-}
-
-.second {
-  color: dimgrey;
-  animation-duration: 3s;
-  animation-delay: 8.5s;
-  animation-iteration-count: 1;
-}
-
-.third {
-  color: dimgrey;
-  animation-duration: 3s;
-  animation-delay: 9s;
-  animation-iteration-count: 1;
-}
-
-.forth {
-  color: dimgrey;
-  animation-duration: 3s;
-  animation-delay: 9.5s;
-  animation-iteration-count: 1;
-}
-
-.fifth {
-  color: dimgrey;
-  animation-duration: 3s;
-  animation-delay: 10s;
-  animation-iteration-count: 1;
-}
-
-.popover-content {
-  padding: 10px;
-  line-height: 15px;
+r: black;
 }
 
 #popover636917 {
   position: absolute;
 }
-
 
 /*Other ================================================================================ */
 
