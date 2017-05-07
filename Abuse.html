@@ -2,12 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>Destinations of Foreign Domestic Workers</title>
-	<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
-	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<title>Abuses and unfair treatments</title>
+	<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style_circle.css"/>
     <link rel="stylesheet" href="animate.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://github.com/HubSpot/tether/blob/master/dist/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
 	<!-- Google Fonts -->
@@ -15,32 +14,40 @@
 </head>
 
 <body>
+	<form>
+		<label><input type="radio" name="dataset" id="dataset" value="total" checked> Abuse</label>
+		<label><input type="radio" name="dataset" id="dataset" value="option1"> Forced labour</label>
+		<label><input type="radio" name="dataset" id="dataset" value="option2"> Sleeping arrangement</label>
+		<label><input type="radio" name="dataset" id="dataset" value="option3"> Working hours</label>
+	</form>
 	<div id="heading-next">
-  		<br>Land of Opportunity
+  		<br>Abuses and unfair treatments
   	</div>
    	<div id="container">
-    	<div id="chart-no-animation" class="animated fadeIn">
-    		<svg height="422" width="620">
-    			<text class="chart-title" x="215" y="40" font-size="20">Average Monthly Salary</text>
-  				<circle class="circle-1" cx="200" cy="280" r="20" stroke="none" fill="#e8897d" />
-				<circle class="circle-2" cx="450" cy="200" r="100" stroke="none" fill="#e8897d" />
-  			 	<text x="145" y="340" font-size="24">US$102.6</text>
-  			 		<text x="165" y="380" font-size="14">Philippines</text>
-  			 	<text x="400" y="340" font-size="24">US$552.6</text>
-  			 		<text x="418" y="380" font-size="14">Hong Kong</text>
-  			 		<text x="372" y="400" font-size="12">As Foreign Domestic Workers</text>
-   			</svg>
-    		
-    
-    	</div>		
+    	<div id="chart" class="animated fadeIn">
+    		<script src="js/abuse.js"></script>
+		</div>
+    	<div id="reminder">
+    		Click to see another chart on the top left!
+    	</div>
      	<div id="textbox-next">
         	<br>
-        	<p><span id="intro1" class="animated fadeIn">Hong Kong has one of the highest densities of domestic workers in the world. In 2016, there were over <b>0.3 million</b> Foreign Domestic Workers in Hong Kong. </span></p>
-        	<p><span id="intro2" class="animated fadeIn">However, Hong Kong has been accused of condoning <b>modern-day slavery</b> and treating helpers as second-class citizens for years. They are never considered as part of the Chinese-dominated society. Not only being discriminated and defamed, they are also often <b>overworked</b>, <b>underpaid</b> and <b>abused</b> systematically.</span></p>
-        	<p><span id="intro3" class="animated fadeIn">This visualisation will bring you through their story.</span></p>
+        	<p><span id="next1" class="animated fadeIn">Despite the tremendous support these foreign workers has given us, Hong Kong is lacking behind in protecting their rights.</span></p>
+        	<div id="next2" class="animated fadeIn">
+				<p>Two Hong Kong NGOs, <a href="http://issuu.com/mfmw/docs/primer_live-in_english">Mission for Migrant Workers</a> and <a href="www.justicecentre.org.hk/framework/uploads/2014/03/JCHK_Report_final_spreads.pdf">Justice Centre</a>, have interviewed over 3,000 and 1,000 foreign domestic workers and 2012 and 2016 respectively.</p>
+				<p><b>17%</b> of the respondents had displayed all the indicators required to be counted in <b>forced labour</b>. <b>That’s 1 in 6 MDWs in Hong Kong.
+			</div>
+			<div id="next3" class="animated fadeIn">
+				<p></b>Apart from those, <b>66.3%</b> displayed strong signs of exploitation, but do not trigger enough indicators to be counted as being in forced labour.</p>		
+				<p>Moreover, <b>6%</b> of respondents reported they had suffered from <b>sexual abuse</b> by their current or former employer.</p>
+        	</div>
+			<div id="next4" class="animated fadeIn">
+				<p>Although the law requires employers to provide the domestic workers with “suitable accommodation and with reasonable privacy”, <b>39%</b> of respondents said they did not have their own bedroom, and over <b>35%</b> shared a room with a child or an elderly individual.</p>
+        	</div>
     	</div>
     </div>
-	
-	<div id="clicker-next"><a href="https://justin-yim.github.io/Foreign-Domestic-Workers-in-Hong-Kong/Salary.html">Next</a></div>
+	<div id="clicker-back"><a href="https://justin-yim.github.io/Foreign-Domestic-Workers-in-Hong-Kong/Salary.html">Back</a></div>
+	<div id="clicker-next"><a href="https://justin-yim.github.io/Foreign-Domestic-Workers-in-Hong-Kong/Poem.html">Next</a></div>
 </body>
+	
 </html>

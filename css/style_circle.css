@@ -185,7 +185,24 @@ img{
 	height: 30px;
 	z-index: 15;
     top: 102%;
-	left: 57%;
+	left: 62%;
+	margin: -100px 0 0 -150px;
+}
+
+#clicker-back{			 
+	position: absolute;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-size:18px;
+    border: 1.5px solid;
+    border-color: #363636;
+	cursor: pointer;
+	width: 100px;
+	padding-top: 10px;
+	height: 30px;
+	z-index: 15;
+    top: 102%;
+	left: 52%;
 	margin: -100px 0 0 -150px;
 }
 
@@ -219,10 +236,27 @@ img{
 	animation-iteration-count: 1;
 }
 
-#circle3{
-	line-height: 16px;
+#next1{
 	animation-duration: 3s;
-	animation-delay: 5s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+}
+
+#next2{
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+}
+
+#next3{
+	animation-duration: 3s;
+	animation-delay: 6.5s;
+	animation-iteration-count: 1;
+}
+
+#next4{
+	animation-duration: 3s;
+	animation-delay: 9s;
 	animation-iteration-count: 1;
 }
 
